@@ -30,5 +30,18 @@ private double landLeft;
         throw new RuntimeException("you cant do it");
     }
 
+    public void harvest (Flower flower){
+        if(flowers.contains(flower)){
+            land += flower.getNeededArea();
+            flowers.remove(flower);
+
+        }
+        throw new RuntimeException("land is empty");
+    }
+
+
+
+
+
 
 }
